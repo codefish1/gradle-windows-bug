@@ -46,6 +46,7 @@ class ExampleTest {
         GradleRunner.create()
                 .withProjectDir(tempDir)
                 .withEnvironment(mapOf())
+                //.withEnvironment(mapOf("SystemRoot" to System.getenv("SystemRoot")))
                 .forwardStdOutput(PrintWriter(System.out)).build()
 
     }
