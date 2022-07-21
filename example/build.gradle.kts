@@ -11,11 +11,16 @@ repositories {
 dependencies {
 
     testImplementation(gradleTestKit())
-    testImplementation("org.junit.juipter:junit-juipter-api:5.8.2")
-    testRuntimeOnly("org.junit.juipter:junit-juipter-engine:5.8.2")
+    testImplementation("org.junit.jupiter:junit-jupiter-api:5.8.2")
+    testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:5.8.2")
 }
 
 tasks.withType<Test>().configureEach {
     useJUnitPlatform()
 }
 
+java {
+    toolchain {
+        languageVersion.set(JavaLanguageVersion.of(17))
+    }
+}

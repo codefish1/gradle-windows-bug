@@ -6,5 +6,3 @@
  * Detailed information about configuring a multi-project build in Gradle can be found
  * in the user manual at https://docs.gradle.org/7.2/userguide/multi_project_builds.html
  */
-
-rootProject.name = "gradle-windows-bug"
